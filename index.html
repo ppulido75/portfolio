@@ -14,23 +14,30 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=14">
+  <link rel="stylesheet" href="styles.css?v=16">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"Person","name":"Pau Pulido Cano","jobTitle":"Desarrollador Full Stack","email":"mailto:paupcano75@gmail.com","sameAs":["https://github.com/ppulido75"],"address":{"@type":"PostalAddress","addressLocality":"Santa Coloma de Farners","addressCountry":"ES"}}
   </script>
 </head>
 <body>
-  <a class="skip" href="#main">Saltar al contenido</a>
+<a class="skip" href="#main" data-i18n="skip">Saltar al contenido</a>
 
   <header class="top">
-    <a class="brand" href="#inicio" aria-label="Inicio">PP<span>.</span></a>
-    <nav aria-label="Principal" id="nav">
-      <a href="#experiencia">Experiencia</a>
-      <a href="#proyectos">Proyectos</a>
-      <a href="#stack">Stack</a>
-      <a href="#formacion">Formación</a>
-      <a href="#contacto" class="pill">Contacto</a>
-    </nav>
+    <a class="brand" href="#inicio" data-i18n-aria="home" aria-label="Inicio">PP<span>.</span></a>
+    <div class="topr">
+      <nav aria-label="Principal" id="nav">
+        <a href="#experiencia" data-i18n="nav_exp">Experiencia</a>
+        <a href="#proyectos" data-i18n="nav_proj">Proyectos</a>
+        <a href="#stack" data-i18n="nav_stack">Stack</a>
+        <a href="#formacion" data-i18n="nav_edu">Formación</a>
+        <a href="#contacto" class="pill" data-i18n="nav_contact">Contacto</a>
+      </nav>
+      <div class="lang" role="group" aria-label="Idioma / Language">
+        <button type="button" data-lang="es" aria-pressed="true" lang="es" title="Castellano">ES</button>
+        <button type="button" data-lang="ca" aria-pressed="false" lang="ca" title="Català">CA</button>
+        <button type="button" data-lang="en" aria-pressed="false" lang="en" title="English">EN</button>
+      </div>
+    </div>
   </header>
 
   <ol class="dots" aria-hidden="true" id="dots">
@@ -44,51 +51,52 @@
     <section id="inicio" class="screen hero">
       <div class="bgmark" aria-hidden="true">PP</div>
       <figure class="photo">
-        <img src="assets/pau.png" width="427" height="606" alt="Retrato de Pau Pulido Cano" fetchpriority="high">
+        <img src="assets/pau.png" width="427" height="606" data-i18n-alt="photo_alt" alt="Retrato de Pau Pulido Cano" fetchpriority="high">
       </figure>
       <div class="inner">
-        <p class="tag reveal"><i></i> Disponible para nuevas oportunidades</p>
+        <p class="tag reveal"><i></i> <span data-i18n="tag">Disponible para nuevas oportunidades</span></p>
         <h1 class="reveal">Pau Pulido<br>Cano<span class="dot">.</span></h1>
-        <p class="role reveal">Desarrollador <b>Full Stack</b></p>
-        <p class="lead reveal">Construyo aplicaciones web con PHP, JavaScript y SQL. Trabajo en Neorg, soy técnico superior en DAW y actualmente curso la especialización en IA y Big Data.</p>
+        <p class="role reveal" data-i18n="role">Desarrollador <b>Full Stack</b></p>
+        <p class="lead reveal" data-i18n="lead">Construyo aplicaciones web con PHP, JavaScript y SQL. Trabajo en Neorg y soy técnico superior en DAW y DAM (Full Stack). Actualmente curso la especialización en IA y Big Data.</p>
         <p class="cta reveal">
-          <a class="btn primary" href="assets/CV_Pau_Pulido_Cano.pdf" download>Descargar CV <span aria-hidden="true">↓</span></a>
-          <a class="btn" href="#proyectos">Ver proyectos <span aria-hidden="true">→</span></a>
+          <a class="btn primary" href="assets/CV_Pau_Pulido_Cano.pdf" download data-i18n="cv">Descargar CV <span aria-hidden="true">↓</span></a>
+          <a class="btn" href="#proyectos" data-i18n="see_projects">Ver proyectos <span aria-hidden="true">→</span></a>
+          <a class="btn mini linkedin" href="LINKEDIN_URL" target="_blank" rel="noopener" hidden><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg><span data-i18n="more">Para más</span></a>
         </p>
         <ul class="facts reveal">
-          <li><b>2</b><span>empresas</span></li>
-          <li><b>6</b><span>lenguajes y formatos de datos</span></li>
-          <li><b>B2</b><span>inglés Cambridge</span></li>
-          <li><b>3</b><span>ciclos formativos</span></li>
+          <li><b>2</b><span data-i18n="f_companies">empresas</span></li>
+          <li><b>6</b><span data-i18n="f_langs">lenguajes y formatos de datos</span></li>
+          <li><b>B2</b><span data-i18n="f_english">inglés Cambridge</span></li>
+          <li><b>3</b><span data-i18n="f_degrees">ciclos formativos</span></li>
         </ul>
       </div>
-      <a class="scroll" href="#experiencia" aria-label="Ir a experiencia"><span></span></a>
+      <a class="scroll" href="#experiencia" data-i18n-aria="go_exp" aria-label="Ir a experiencia"><span></span></a>
     </section>
 
     <!-- 02 EXPERIENCIA -->
     <section id="experiencia" class="screen dark">
       <div class="inner">
-        <p class="num reveal">01 / Experiencia</p>
-        <h2 class="reveal">Dónde he trabajado</h2>
+        <p class="num reveal" data-i18n="exp_num">01 / Experiencia</p>
+        <h2 class="reveal" data-i18n="exp_h2">Dónde he trabajado</h2>
         <div class="grid2">
-          <a class="panel neorg reveal" href="https://www.neorgsite.com/" target="_blank" rel="noopener" aria-label="Neorg, abrir su web (se abre en otra pestaña)">
-            <p class="date">Nov 2025 — Actualidad</p>
+          <a class="panel neorg reveal" href="https://www.neorgsite.com/" target="_blank" rel="noopener" data-i18n-aria="neorg_aria" aria-label="Neorg, abrir su web (se abre en otra pestaña)">
+            <p class="date" data-i18n="neorg_date">Nov 2025 — Actualidad</p>
             <h3>Neorg <span class="go" aria-hidden="true">↗</span></h3>
-            <p class="sub">Desarrollador Full Stack</p>
+            <p class="sub" data-i18n="neorg_sub">Desarrollador Full Stack</p>
             <ul>
-              <li>Front-end con HTML, CSS y JavaScript</li>
-              <li>Back-end con PHP y consultas SQL</li>
-              <li>Claude, Gemini Gems y GitHub en el día a día</li>
+              <li data-i18n="neorg_1">Front-end con HTML, CSS y JavaScript</li>
+              <li data-i18n="neorg_2">Back-end con PHP y consultas SQL</li>
+              <li data-i18n="neorg_3">Claude, Gemini Gems y GitHub en el día a día</li>
             </ul>
           </a>
-          <a class="panel mitica reveal" href="https://mitica.net/" target="_blank" rel="noopener" aria-label="Mitica Brands, abrir su web (se abre en otra pestaña)">
-            <p class="date">Sep 2023 — Jul 2024</p>
+          <a class="panel mitica reveal" href="https://mitica.net/" target="_blank" rel="noopener" data-i18n-aria="mitica_aria" aria-label="Mitica Brands, abrir su web (se abre en otra pestaña)">
+            <p class="date" data-i18n="mitica_date">Sep 2023 — Jul 2024</p>
             <h3>Mitica Brands <span class="go" aria-hidden="true">↗</span></h3>
-            <p class="sub">Desarrollador de aplicaciones web</p>
+            <p class="sub" data-i18n="mitica_sub">Desarrollador de aplicaciones web</p>
             <ul>
-              <li>PHP, HTML, TypeScript y SQL sobre Symfony</li>
-              <li>Consultas y gestión de bases de datos</li>
-              <li>Gestión y mantenimiento web</li>
+              <li data-i18n="mitica_1">PHP, HTML, TypeScript y SQL sobre Symfony</li>
+              <li data-i18n="mitica_2">Consultas y gestión de bases de datos</li>
+              <li data-i18n="mitica_3">Gestión y mantenimiento web</li>
             </ul>
           </a>
         </div>
@@ -98,10 +106,10 @@
     <!-- 03 PROYECTOS -->
     <section id="proyectos" class="screen">
       <div class="inner">
-        <p class="num reveal">02 / Proyectos</p>
-        <h2 class="reveal">Trabajo seleccionado</h2>
+        <p class="num reveal" data-i18n="proj_num">02 / Proyectos</p>
+        <h2 class="reveal" data-i18n="proj_h2">Trabajo seleccionado</h2>
         <div class="projects">
-          <article class="project soon reveal" aria-label="Barbería, próximamente">
+          <article class="project soon reveal">
             <div class="shot" aria-hidden="true">
               <div class="win"><i></i><i></i><i></i></div>
               <div class="mock">
@@ -112,21 +120,21 @@
             </div>
             <div class="body">
               <p class="tags">Astro · Vue · Node.js</p>
-              <h3>Barbería <em class="badge">Próximamente</em></h3>
+              <h3><span data-i18n="p1">Barbería</span> <em class="badge" data-i18n="soon">Próximamente</em></h3>
             </div>
           </article>
-          <article class="project soon reveal" aria-label="HTML básico, próximamente">
+          <article class="project soon reveal">
             <div class="shot small" aria-hidden="true"><code>&lt;html&gt;<br>&nbsp;&nbsp;&lt;body/&gt;<br>&lt;/html&gt;</code></div>
             <div class="body">
               <p class="tags">HTML · CSS</p>
-              <h3>HTML básico <em class="badge">Próximamente</em></h3>
+              <h3><span data-i18n="p2">HTML básico</span> <em class="badge" data-i18n="soon">Próximamente</em></h3>
             </div>
           </article>
-          <article class="project soon reveal" aria-label="Proyecto con React, próximamente">
-            <div class="shot small" aria-hidden="true"><code>&lt;App /&gt;<br>&nbsp;&nbsp;{`{ state }`}<br>&lt;/App&gt;</code></div>
+          <article class="project soon reveal">
+            <div class="shot small" aria-hidden="true"><code>&lt;App /&gt;<br>&nbsp;&nbsp;{ state }<br>&lt;/App&gt;</code></div>
             <div class="body">
               <p class="tags">React · JavaScript</p>
-              <h3>Proyecto con React <em class="badge">Próximamente</em></h3>
+              <h3><span data-i18n="p3">Proyecto con React</span> <em class="badge" data-i18n="soon">Próximamente</em></h3>
             </div>
           </article>
         </div>
@@ -136,13 +144,13 @@
     <!-- 04 STACK -->
     <section id="stack" class="screen dark">
       <div class="inner">
-        <p class="num reveal">03 / Stack</p>
-        <h2 class="reveal">Con qué trabajo</h2>
+        <p class="num reveal" data-i18n="stack_num">03 / Stack</p>
+        <h2 class="reveal" data-i18n="stack_h2">Con qué trabajo</h2>
         <div class="stack">
-          <div class="group reveal"><h3>Web</h3><p><span>HTML</span><span>CSS</span><span>JavaScript</span><span>TypeScript</span><span>PHP</span><span>Symfony</span></p></div>
-          <div class="group reveal"><h3>Datos</h3><p><span>MySQL</span><span>SQL</span><span>XML</span><span>XQuery</span><span>JSON</span></p></div>
-          <div class="group reveal"><h3>Otros lenguajes</h3><p><span>Java</span><span>Python</span><span>Kotlin (Android)</span></p></div>
-          <div class="group reveal"><h3>Herramientas</h3><p><span>Git</span><span>GitHub</span><span>Claude</span><span>Gemini</span></p></div>
+          <div class="group reveal"><h3 data-i18n="g_web">Web</h3><p><span>HTML</span><span>CSS</span><span>JavaScript</span><span>TypeScript</span><span>React</span><span>Vue</span><span>PHP</span><span>Symfony</span></p></div>
+          <div class="group reveal"><h3 data-i18n="g_data">Datos</h3><p><span>MySQL</span><span>SQL</span><span>XML</span><span>XQuery</span><span>JSON</span></p></div>
+          <div class="group reveal"><h3 data-i18n="g_other">Otros lenguajes</h3><p><span>Java</span><span>Python</span><span>Kotlin (Android)</span></p></div>
+          <div class="group reveal"><h3 data-i18n="g_tools">Herramientas</h3><p><span>Git</span><span>GitHub</span><span>Claude</span><span>Gemini</span></p></div>
         </div>
       </div>
     </section>
@@ -150,35 +158,36 @@
     <!-- 05 FORMACION -->
     <section id="formacion" class="screen">
       <div class="inner">
-        <p class="num reveal">04 / Formación</p>
-        <h2 class="reveal">Cómo he llegado hasta aquí</h2>
+        <p class="num reveal" data-i18n="edu_num">04 / Formación</p>
+        <h2 class="reveal" data-i18n="edu_h2">Cómo he llegado hasta aquí</h2>
         <ol class="timeline">
-          <li class="reveal"><time>En curso</time><div><h3>Especialización en IA y Big Data</h3><p>Sa Palomera, Blanes</p></div></li>
-          <li class="reveal"><time>2025 — 2026</time><div><h3>DAW · Desarrollo de Aplicaciones Web</h3><p>Institut Montilvi · Finalizado</p></div></li>
-          <li class="reveal"><time>2022 — 2025</time><div><h3>DAM · Desarrollo de Aplicaciones Multiplataforma</h3><p>Institut Vidreres</p></div></li>
-          <li class="reveal"><time>2019 — 2021</time><div><h3>SMX · Sistemas Microinformáticos y Redes</h3><p>Institut Vidreres</p></div></li>
+          <li class="reveal"><time data-i18n="e0_t">En curso</time><div><h3 data-i18n="e0_h">Especialización en IA y Big Data</h3><p>Sa Palomera, Blanes</p></div></li>
+          <li class="reveal"><time>2025 — 2026</time><div><h3 data-i18n="e1_h">DAW · Desarrollo de Aplicaciones Web</h3><p><span>Institut Montilvi</span> · <span data-i18n="done">Finalizado</span></p></div></li>
+          <li class="reveal"><time>2022 — 2025</time><div><h3 data-i18n="e2_h">DAM · Desarrollo de Aplicaciones Multiplataforma</h3><p>Institut Vidreres</p></div></li>
+          <li class="reveal"><time>2019 — 2021</time><div><h3 data-i18n="e3_h">SMX · Sistemas Microinformáticos y Redes</h3><p>Institut Vidreres</p></div></li>
         </ol>
-        <p class="langs reveal"><b>Idiomas</b> Castellano y catalán, nativo · Inglés, Cambridge B2 First (2022)</p>
+        <p class="langs reveal" data-i18n="langs"><b>Idiomas</b> Castellano y catalán, nativo · Inglés, Cambridge B2 First (2022)</p>
       </div>
     </section>
 
     <!-- 06 CONTACTO -->
     <section id="contacto" class="screen dark contact">
       <div class="inner">
-        <p class="num reveal">05 / Contacto</p>
-        <h2 class="reveal big">Hablemos.</h2>
+        <p class="num reveal" data-i18n="con_num">05 / Contacto</p>
+        <h2 class="reveal big" data-i18n="con_h2">Hablemos.</h2>
         <a class="mail reveal" href="mailto:paupcano75@gmail.com">paupcano75@gmail.com</a>
         <p class="cta reveal">
-          <a class="btn primary" href="assets/CV_Pau_Pulido_Cano.pdf" download>Descargar CV <span aria-hidden="true">↓</span></a>
+          <a class="btn primary" href="assets/CV_Pau_Pulido_Cano.pdf" download data-i18n="cv">Descargar CV <span aria-hidden="true">↓</span></a>
           <a class="btn" href="https://github.com/ppulido75" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
         </p>
-        <p class="meta reveal">Santa Coloma de Farners, Girona · Vehículo propio</p>
+        <p class="meta reveal" data-i18n="meta">Santa Coloma de Farners, Girona · Vehículo propio</p>
       </div>
       <footer>© 2026 Pau Pulido Cano</footer>
     </section>
 
   </main>
 
-  <script src="main.js?v=14" defer></script>
+  <script src="i18n.js?v=16" defer></script>
+  <script src="main.js?v=16" defer></script>
 </body>
 </html>

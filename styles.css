@@ -169,3 +169,16 @@ footer{color:var(--dmute);font-size:.85rem;padding-top:2rem;width:100%;max-width
   .scroll span{animation:none}
 }
 @media print{.top,.dots,.scroll{display:none}.screen{min-height:0}.js .reveal{opacity:1;transform:none}}
+
+/* Idioma y botón LinkedIn */
+[hidden]{display:none!important}
+.topr{display:flex;align-items:center;gap:1.6rem}
+.lang{display:flex;gap:.15rem;border:1px solid currentColor;border-radius:99px;padding:.15rem;opacity:.9}
+.lang button{font:600 .72rem var(--font);letter-spacing:.05em;color:inherit;background:transparent;border:0;border-radius:99px;padding:.3rem .6rem;cursor:pointer;transition:background .2s,color .2s}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+body.on-dark .lang button[aria-pressed="true"]{background:var(--dink);color:var(--dbg)}
+.lang button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.btn.mini{padding:.5rem .9rem;font-size:.82rem;gap:.45rem;border-color:var(--line);color:var(--mute)}
+.btn.mini:hover{color:var(--ink);border-color:var(--ink)}
+.dark .btn.mini{border-color:var(--dline);color:var(--dmute)}
+@media (max-width:820px){.topr{gap:.7rem}.cta{align-items:center}}
