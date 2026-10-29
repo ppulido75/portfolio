@@ -94,6 +94,10 @@ h1 .dot{color:var(--ink)}
 .project h3 span{color:var(--accent);transition:.2s}
 .project:hover h3 span{transform:translate(3px,-3px)}
 .project .body p{color:var(--mute);margin:.5rem 0 0}
+.project.soon{cursor:default}
+.project.soon:hover{transform:none;box-shadow:none}
+.project.soon .shot{filter:grayscale(1);opacity:.75}
+.badge{font:500 .7rem var(--mono);font-style:normal;text-transform:uppercase;letter-spacing:.06em;border:1px solid var(--ink);border-radius:99px;padding:.25rem .7rem;white-space:nowrap;align-self:flex-start}
 .tags{font:500 .78rem var(--mono)!important;color:var(--accent)!important;margin:0 0 .6rem!important;text-transform:uppercase;letter-spacing:.05em}
 
 /* Stack */
