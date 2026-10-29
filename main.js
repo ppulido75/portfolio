@@ -16,6 +16,7 @@ const spy = new IntersectionObserver((entries) => {
   entries.forEach((e) => {
     if (e.isIntersecting) {
       dots.forEach((d) => d.classList.toggle('on', d.dataset.t === e.target.id));
+      document.body.classList.toggle('on-dark', e.target.classList.contains('dark'));
     }
   });
 }, { threshold: 0.5 });
