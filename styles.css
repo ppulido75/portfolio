@@ -73,9 +73,9 @@ h1 .dot{color:var(--ink)}
 .panel.neorg{--glow:#ffd21f}
 .panel.mitica{--glow:#ff4fa0}
 .panel::before{content:"";position:absolute;inset:-1px;border-radius:18px;z-index:-1;opacity:0;transition:opacity .35s;
-  background:radial-gradient(120% 90% at 50% 0%,color-mix(in srgb,var(--glow) 28%,transparent),transparent 65%)}
-.panel:hover,.panel:focus-visible{border-color:var(--glow);transform:translateY(-4px);
-  box-shadow:0 0 0 1px var(--glow),0 0 28px -4px var(--glow),0 0 70px -10px var(--glow)}
+  background:radial-gradient(120% 90% at 50% 0%,color-mix(in srgb,var(--glow) 13%,transparent),transparent 65%)}
+.panel:hover,.panel:focus-visible{border-color:color-mix(in srgb,var(--glow) 65%,transparent);transform:translateY(-4px);
+  box-shadow:0 0 0 1px color-mix(in srgb,var(--glow) 55%,transparent),0 0 22px -8px color-mix(in srgb,var(--glow) 55%,transparent),0 0 60px -20px color-mix(in srgb,var(--glow) 45%,transparent)}
 .panel:hover::before,.panel:focus-visible::before{opacity:1}
 .panel:focus-visible{outline:none}
 .panel .go{display:inline-block;color:var(--glow);font-size:1.4rem;transition:transform .25s}
