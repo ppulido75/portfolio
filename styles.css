@@ -47,7 +47,7 @@ h3{margin:0;font-weight:600}
 .tag{display:inline-flex;align-items:center;gap:.6rem;font:500 .85rem var(--mono);color:var(--mute);margin:0 0 1.5rem}
 .tag i{width:8px;height:8px;border-radius:50%;background:#22a55b;box-shadow:0 0 0 4px rgba(34,165,91,.18)}
 h1{font-size:clamp(3.2rem,10vw,8.5rem);line-height:.95;letter-spacing:-.05em;font-weight:800;margin:0 0 1.5rem}
-h1 .dot{color:var(--accent)}
+h1 .dot{color:var(--ink)}
 .role{font-size:clamp(1.3rem,2.6vw,2rem);margin:0 0 1.2rem;color:var(--mute)}
 .role b{color:var(--ink);font-weight:600}
 .lead{max-width:38rem;font-size:1.1rem;color:var(--mute);margin:0 0 2rem}
