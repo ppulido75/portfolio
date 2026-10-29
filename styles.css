@@ -77,7 +77,7 @@ h1 .dot{color:var(--ink)}
 .panel li{padding:.7rem 0;border-top:1px solid var(--dline)}
 
 /* Projects */
-.projects{display:grid;grid-template-columns:1.4fr 1fr;gap:1.5rem}
+.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
 .project{display:flex;flex-direction:column;background:var(--panel);border:1px solid var(--line);border-radius:18px;overflow:hidden;text-decoration:none;transition:.25s}
 .project:hover{transform:translateY(-5px);box-shadow:0 20px 40px -20px rgba(0,0,0,.25)}
 .shot{height:15rem;background:#e9e7df;padding:1.2rem;display:flex;flex-direction:column;gap:.6rem}
@@ -90,7 +90,7 @@ h1 .dot{color:var(--ink)}
 .m-hero b{height:10px;width:70%;background:#fff;border-radius:4px}.m-hero b.s{width:40%;background:var(--accent)}
 .m-row{display:flex;gap:.5rem;height:26px}.m-row u{flex:1;background:#e9e7df;border-radius:5px}
 .project .body{padding:1.5rem}
-.project h3{font-size:1.4rem;letter-spacing:-.02em;display:flex;justify-content:space-between;gap:1rem}
+.project h3{font-size:1.4rem;letter-spacing:-.02em;display:flex;flex-direction:column;align-items:flex-start;gap:.7rem}
 .project h3 span{color:var(--accent);transition:.2s}
 .project:hover h3 span{transform:translate(3px,-3px)}
 .project .body p{color:var(--mute);margin:.5rem 0 0}
