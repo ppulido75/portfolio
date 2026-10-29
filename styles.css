@@ -69,7 +69,17 @@ h1 .dot{color:var(--ink)}
 /* Experience */
 .grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}
 .panel{background:var(--dpanel);border:1px solid var(--dline);border-radius:18px;padding:2rem;transition:.25s}
-.panel:hover{border-color:#555;transform:translateY(-4px)}
+.panel{display:block;position:relative;text-decoration:none;color:inherit;isolation:isolate;--glow:#fff}
+.panel.neorg{--glow:#ffd21f}
+.panel.mitica{--glow:#ff4fa0}
+.panel::before{content:"";position:absolute;inset:-1px;border-radius:18px;z-index:-1;opacity:0;transition:opacity .35s;
+  background:radial-gradient(120% 90% at 50% 0%,color-mix(in srgb,var(--glow) 28%,transparent),transparent 65%)}
+.panel:hover,.panel:focus-visible{border-color:var(--glow);transform:translateY(-4px);
+  box-shadow:0 0 0 1px var(--glow),0 0 28px -4px var(--glow),0 0 70px -10px var(--glow)}
+.panel:hover::before,.panel:focus-visible::before{opacity:1}
+.panel:focus-visible{outline:none}
+.panel .go{display:inline-block;color:var(--glow);font-size:1.4rem;transition:transform .25s}
+.panel:hover .go{transform:translate(4px,-4px)}
 .date{font:500 .8rem var(--mono);color:var(--dmute);margin:0 0 1.2rem}
 .panel h3{font-size:2rem;letter-spacing:-.03em;font-weight:800}
 .sub{color:var(--dmute);margin:.2rem 0 1.4rem}
