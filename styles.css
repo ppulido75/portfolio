@@ -1,5 +1,5 @@
 :root{
-  --bg:#f4f3ef; --ink:#111; --mute:#6b6b66; --line:#dcdad2; --panel:#fff; --accent:#2f5bea;
+  --bg:#f3efe3; --ink:#111; --mute:#6b6b66; --line:#dcdad2; --panel:#fff; --accent:#2f5bea;
   --dbg:#121212; --dink:#f2f1ec; --dmute:#9a9a94; --dline:#2b2b2b; --dpanel:#1b1b1b;
   --font:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
   --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
@@ -38,6 +38,12 @@ h3{margin:0;font-weight:600}
 /* Hero */
 .hero .bgmark{position:absolute;right:-2vw;bottom:-8vw;font-weight:800;font-size:clamp(16rem,42vw,44rem);line-height:.8;letter-spacing:-.06em;color:transparent;-webkit-text-stroke:1.5px var(--line);user-select:none}
 .hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(var(--line) 1px,transparent 1px);background-size:28px 28px;opacity:.7;mask-image:linear-gradient(90deg,transparent,#000 80%)}
+.photo{position:absolute;right:max(var(--pad),calc((100vw - 74rem)/2 + var(--pad)));bottom:0;margin:0;height:min(84vh,52rem);aspect-ratio:427/606;z-index:0;pointer-events:none}
+.photo img{width:100%;height:100%;object-fit:cover;display:block;mix-blend-mode:multiply;
+  -webkit-mask-image:linear-gradient(to bottom,#000 86%,transparent 100%);
+  mask-image:linear-gradient(to bottom,#000 86%,transparent 100%);}
+.hero .inner{z-index:2}
+.hero .lead,.hero .facts{max-width:min(38rem,56%)}
 .tag{display:inline-flex;align-items:center;gap:.6rem;font:500 .85rem var(--mono);color:var(--mute);margin:0 0 1.5rem}
 .tag i{width:8px;height:8px;border-radius:50%;background:#22a55b;box-shadow:0 0 0 4px rgba(34,165,91,.18)}
 h1{font-size:clamp(3.2rem,10vw,8.5rem);line-height:.95;letter-spacing:-.05em;font-weight:800;margin:0 0 1.5rem}
@@ -121,6 +127,10 @@ footer{color:var(--dmute);font-size:.85rem;padding-top:2rem;width:100%;max-width
 @media (max-height:820px){.scroll{display:none}}
 @media (max-width:820px){
   .hero .bgmark{opacity:.5;bottom:-12vw}
+  .photo{position:relative;right:auto;height:auto;width:min(58vw,16rem);margin:0 0 1.5rem auto;aspect-ratio:1/1.15}
+  .photo img{object-position:top;-webkit-mask-image:linear-gradient(to bottom,#000 86%,transparent);mask-image:linear-gradient(to bottom,#000 86%,transparent)}
+  .hero{flex-direction:column;align-items:stretch;justify-content:center}
+  .hero .lead,.hero .facts{max-width:none}
   nav a:not(.pill){display:none}
   .dots{display:none}
   .grid2,.projects,.stack{grid-template-columns:1fr}
