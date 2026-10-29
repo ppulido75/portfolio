@@ -9,8 +9,11 @@
   <meta property="og:title" content="Pau Pulido Cano · Desarrollador Full Stack">
   <meta property="og:description" content="Portfolio y CV de Pau Pulido Cano.">
   <meta property="og:type" content="website">
-  <meta name="theme-color" content="#ffffff">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231a1a1a'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-size='16' font-weight='700' text-anchor='middle' fill='white'%3EP%3C/text%3E%3C/svg%3E">
+  <meta name="theme-color" content="#f4f3ef">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23111'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-size='16' font-weight='700' text-anchor='middle' fill='white'%3EP%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"Person","name":"Pau Pulido Cano","jobTitle":"Desarrollador Full Stack","email":"mailto:paupcano75@gmail.com","sameAs":["https://github.com/ppulido75"],"address":{"@type":"PostalAddress","addressLocality":"Santa Coloma de Farners","addressCountry":"ES"}}
@@ -20,109 +23,154 @@
   <a class="skip" href="#main">Saltar al contenido</a>
 
   <header class="top">
-    <div class="wrap bar">
-      <a class="brand" href="#">Pau Pulido Cano</a>
-      <nav aria-label="Principal">
-        <a href="#experiencia">Experiencia</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#stack">Stack</a>
-        <a href="#formacion">Formación</a>
-        <a href="#contacto">Contacto</a>
-      </nav>
-    </div>
+    <a class="brand" href="#inicio" aria-label="Inicio">PP<span>.</span></a>
+    <nav aria-label="Principal" id="nav">
+      <a href="#experiencia">Experiencia</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#stack">Stack</a>
+      <a href="#formacion">Formación</a>
+      <a href="#contacto" class="pill">Contacto</a>
+    </nav>
   </header>
 
-  <main id="main" class="wrap">
-    <section class="hero">
-      <p class="eyebrow">Santa Coloma de Farners, Girona</p>
-      <h1>Desarrollador Full Stack</h1>
-      <p class="lead">Desarrollo aplicaciones web con PHP, JavaScript y SQL. Actualmente trabajo en Neorg y estudio DAW junto a un curso de especialización en Inteligencia Artificial y Big Data. Busco seguir creciendo en un equipo de desarrollo.</p>
-      <p class="cta">
-        <a class="btn primary" href="assets/CV_Pau_Pulido_Cano.pdf" download>Descargar CV (PDF)</a>
-        <a class="btn" href="mailto:paupcano75@gmail.com">Escríbeme</a>
-        <a class="btn" href="https://github.com/ppulido75" rel="noopener">GitHub</a>
-      </p>
+  <ol class="dots" aria-hidden="true" id="dots">
+    <li data-t="inicio"></li><li data-t="experiencia"></li><li data-t="proyectos"></li>
+    <li data-t="stack"></li><li data-t="formacion"></li><li data-t="contacto"></li>
+  </ol>
+
+  <main id="main">
+
+    <!-- 01 INICIO -->
+    <section id="inicio" class="screen hero">
+      <div class="bgmark" aria-hidden="true">PP</div>
+      <div class="inner">
+        <p class="tag reveal"><i></i> Disponible para nuevas oportunidades</p>
+        <h1 class="reveal">Pau Pulido<br>Cano<span class="dot">.</span></h1>
+        <p class="role reveal">Desarrollador <b>Full Stack</b></p>
+        <p class="lead reveal">Construyo aplicaciones web con PHP, JavaScript y SQL. Trabajo en Neorg y estudio DAW junto a una especialización en IA y Big Data.</p>
+        <p class="cta reveal">
+          <a class="btn primary" href="assets/CV_Pau_Pulido_Cano.pdf" download>Descargar CV <span aria-hidden="true">↓</span></a>
+          <a class="btn" href="#proyectos">Ver proyectos <span aria-hidden="true">→</span></a>
+        </p>
+        <ul class="facts reveal">
+          <li><b>2</b><span>empresas</span></li>
+          <li><b>6</b><span>lenguajes y formatos de datos</span></li>
+          <li><b>B2</b><span>inglés Cambridge</span></li>
+          <li><b>3</b><span>ciclos formativos</span></li>
+        </ul>
+      </div>
+      <a class="scroll" href="#experiencia" aria-label="Ir a experiencia"><span></span></a>
     </section>
 
-    <section id="experiencia" aria-labelledby="h-exp">
-      <h2 id="h-exp">Experiencia</h2>
-      <article class="item">
-        <div class="meta">Nov 2025 – Actualidad</div>
-        <div>
-          <h3>Desarrollador Full Stack <span>· Neorg</span></h3>
-          <ul>
-            <li>Desarrollo front-end con HTML, CSS y JavaScript.</li>
-            <li>Desarrollo back-end con PHP y consultas SQL.</li>
-            <li>Uso de Claude, Gemini Gems y GitHub en el flujo de trabajo.</li>
-          </ul>
+    <!-- 02 EXPERIENCIA -->
+    <section id="experiencia" class="screen dark">
+      <div class="inner">
+        <p class="num reveal">01 / Experiencia</p>
+        <h2 class="reveal">Dónde he trabajado</h2>
+        <div class="grid2">
+          <article class="panel reveal">
+            <p class="date">Nov 2025 — Actualidad</p>
+            <h3>Neorg</h3>
+            <p class="sub">Desarrollador Full Stack</p>
+            <ul>
+              <li>Front-end con HTML, CSS y JavaScript</li>
+              <li>Back-end con PHP y consultas SQL</li>
+              <li>Claude, Gemini Gems y GitHub en el día a día</li>
+            </ul>
+          </article>
+          <article class="panel reveal">
+            <p class="date">Sep 2023 — Jul 2024</p>
+            <h3>Mitica Brands</h3>
+            <p class="sub">Desarrollador de aplicaciones web</p>
+            <ul>
+              <li>PHP, HTML, TypeScript y SQL sobre Symfony</li>
+              <li>Consultas y gestión de bases de datos</li>
+              <li>Gestión y mantenimiento web</li>
+            </ul>
+          </article>
         </div>
-      </article>
-      <article class="item">
-        <div class="meta">Sep 2023 – Jul 2024</div>
-        <div>
-          <h3>Desarrollador de aplicaciones web <span>· Mitica Brands</span></h3>
-          <ul>
-            <li>Desarrollo y mantenimiento web con PHP, HTML, TypeScript y SQL sobre Symfony.</li>
-            <li>Consultas y gestión de bases de datos.</li>
-          </ul>
+      </div>
+    </section>
+
+    <!-- 03 PROYECTOS -->
+    <section id="proyectos" class="screen">
+      <div class="inner">
+        <p class="num reveal">02 / Proyectos</p>
+        <h2 class="reveal">Trabajo seleccionado</h2>
+        <div class="projects">
+          <a class="project big reveal" href="https://github.com/ppulido75" rel="noopener">
+            <div class="shot" aria-hidden="true">
+              <div class="win"><i></i><i></i><i></i></div>
+              <div class="mock">
+                <div class="m-nav"></div>
+                <div class="m-hero"><b></b><b></b><b class="s"></b></div>
+                <div class="m-row"><u></u><u></u><u></u></div>
+              </div>
+            </div>
+            <div class="body">
+              <p class="tags">Astro · Vue · Node.js</p>
+              <h3>Plataforma web para barbería <span aria-hidden="true">↗</span></h3>
+              <p>Web pública, panel de administración y API por módulos, con revisión de accesibilidad y rendimiento.</p>
+            </div>
+          </a>
+          <a class="project reveal" href="https://github.com/ppulido75/portfolio" rel="noopener">
+            <div class="shot small" aria-hidden="true"><code>&lt;html&gt;<br>&nbsp;&nbsp;&lt;css/&gt;<br>&lt;/html&gt;</code></div>
+            <div class="body">
+              <p class="tags">HTML · CSS · JS</p>
+              <h3>Este portfolio <span aria-hidden="true">↗</span></h3>
+              <p>Sin frameworks: rápido, accesible y con modo oscuro automático.</p>
+            </div>
+          </a>
         </div>
-      </article>
+      </div>
     </section>
 
-    <section id="proyectos" aria-labelledby="h-pro">
-      <h2 id="h-pro">Proyectos</h2>
-      <article class="card">
-        <h3>Plataforma web para barbería</h3>
-        <p>Proyecto completo de reservas y gestión: web pública, panel de administración y API. Incluye revisiones de accesibilidad y rendimiento.</p>
-        <p class="tags">Astro · Vue · Node.js · API por módulos</p>
-        <p class="links"><a href="https://github.com/ppulido75" rel="noopener">Ver en GitHub →</a></p>
-      </article>
-      <article class="card">
-        <h3>Este portfolio</h3>
-        <p>Sitio estático sin dependencias ni frameworks: HTML y CSS semánticos, accesible, rápido y con modo oscuro automático.</p>
-        <p class="tags">HTML · CSS · GitHub Pages</p>
-        <p class="links"><a href="https://github.com/ppulido75/portfolio" rel="noopener">Código →</a></p>
-      </article>
+    <!-- 04 STACK -->
+    <section id="stack" class="screen dark">
+      <div class="inner">
+        <p class="num reveal">03 / Stack</p>
+        <h2 class="reveal">Con qué trabajo</h2>
+        <div class="stack">
+          <div class="group reveal"><h3>Web</h3><p><span>HTML</span><span>CSS</span><span>JavaScript</span><span>TypeScript</span><span>PHP</span><span>Symfony</span></p></div>
+          <div class="group reveal"><h3>Datos</h3><p><span>MySQL</span><span>SQL</span><span>XML</span><span>XQuery</span><span>JSON</span></p></div>
+          <div class="group reveal"><h3>Otros lenguajes</h3><p><span>Java</span><span>Python</span><span>Kotlin (Android)</span></p></div>
+          <div class="group reveal"><h3>Herramientas</h3><p><span>Git</span><span>GitHub</span><span>Claude</span><span>Gemini</span></p></div>
+        </div>
+      </div>
     </section>
 
-    <section id="stack" aria-labelledby="h-stack">
-      <h2 id="h-stack">Stack</h2>
-      <dl class="stack">
-        <dt>Web</dt><dd>HTML · CSS · JavaScript · TypeScript · PHP · Symfony</dd>
-        <dt>Datos</dt><dd>MySQL · SQL · XML · XQuery · JSON</dd>
-        <dt>Otros lenguajes</dt><dd>Java · Python · Kotlin (Android)</dd>
-        <dt>Herramientas</dt><dd>Git · GitHub · Claude · Gemini</dd>
-      </dl>
+    <!-- 05 FORMACION -->
+    <section id="formacion" class="screen">
+      <div class="inner">
+        <p class="num reveal">04 / Formación</p>
+        <h2 class="reveal">Cómo he llegado hasta aquí</h2>
+        <ol class="timeline">
+          <li class="reveal"><time>En curso</time><div><h3>Especialización en IA y Big Data</h3><p>Sa Palomera, Blanes</p></div></li>
+          <li class="reveal"><time>2025 — 2026</time><div><h3>DAW · Desarrollo de Aplicaciones Web</h3><p>Institut Montilvi</p></div></li>
+          <li class="reveal"><time>2022 — 2025</time><div><h3>DAM · Desarrollo de Aplicaciones Multiplataforma</h3><p>Institut Vidreres</p></div></li>
+          <li class="reveal"><time>2019 — 2021</time><div><h3>SMX · Sistemas Microinformáticos y Redes</h3><p>Institut Vidreres</p></div></li>
+        </ol>
+        <p class="langs reveal"><b>Idiomas</b> Castellano y catalán, nativo · Inglés, Cambridge B2 First (2022)</p>
+      </div>
     </section>
 
-    <section id="formacion" aria-labelledby="h-for">
-      <h2 id="h-for">Formación</h2>
-      <article class="item">
-        <div class="meta">En curso</div>
-        <div><h3>Curso de Especialización en IA y Big Data <span>· Sa Palomera, Blanes</span></h3></div>
-      </article>
-      <article class="item">
-        <div class="meta">2025 – 2026</div>
-        <div><h3>DAW, Desarrollo de Aplicaciones Web <span>· Institut Montilvi</span></h3></div>
-      </article>
-      <article class="item">
-        <div class="meta">2022 – 2025</div>
-        <div><h3>DAM, Desarrollo de Aplicaciones Multiplataforma <span>· Institut Vidreres</span></h3></div>
-      </article>
-      <article class="item">
-        <div class="meta">2019 – 2021</div>
-        <div><h3>SMX, Sistemas Microinformáticos y Redes <span>· Institut Vidreres</span></h3></div>
-      </article>
-      <p class="note"><strong>Idiomas:</strong> castellano y catalán (nativo) · inglés Cambridge B2 First (2022).</p>
+    <!-- 06 CONTACTO -->
+    <section id="contacto" class="screen dark contact">
+      <div class="inner">
+        <p class="num reveal">05 / Contacto</p>
+        <h2 class="reveal big">Hablemos.</h2>
+        <a class="mail reveal" href="mailto:paupcano75@gmail.com">paupcano75@gmail.com</a>
+        <p class="cta reveal">
+          <a class="btn primary" href="assets/CV_Pau_Pulido_Cano.pdf" download>Descargar CV <span aria-hidden="true">↓</span></a>
+          <a class="btn" href="https://github.com/ppulido75" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+        </p>
+        <p class="meta reveal">Santa Coloma de Farners, Girona · Vehículo propio</p>
+      </div>
+      <footer>© 2026 Pau Pulido Cano</footer>
     </section>
 
-    <section id="contacto" aria-labelledby="h-con">
-      <h2 id="h-con">Contacto</h2>
-      <p>Disponible para ofertas y entrevistas. Vehículo propio.</p>
-      <p><a href="mailto:paupcano75@gmail.com">paupcano75@gmail.com</a> · <a href="https://github.com/ppulido75" rel="noopener">github.com/ppulido75</a></p>
-    </section>
   </main>
 
-  <footer class="wrap foot">© 2026 Pau Pulido Cano</footer>
+  <script src="main.js" defer></script>
 </body>
 </html>
